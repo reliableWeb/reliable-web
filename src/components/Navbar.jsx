@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import logo from "../assets/logo.jpg";
 
 const LINKS = [
     {
@@ -28,9 +29,7 @@ export default function Navbar({ onInquire }) {
     >
       <div className="max-w-screen-2xl mx-auto px-6 md:px-12 lg:px-16 flex items-center justify-between h-[72px]">
         <a href="#top" data-testid="brand-logo" className="flex items-center gap-2">
-          <div className="w-8 h-8 bg-[#0a0a0a] flex items-center justify-center">
-            <span className="font-display font-black text-white text-lg leading-none">R</span>
-          </div>
+          <img src={logo} alt="Reliable Industries Logo" className="h-8 w-auto object-contain" />
           <div className="leading-none">
             <div className="font-display font-black text-[18px] tracking-tight">RELIABLE</div>
             <div className="text-[10px] tracking-[0.25em] text-[#52525b] uppercase font-bold">

@@ -1,4 +1,5 @@
 import React from "react";
+import logo from "../assets/logo.jpg";
 
 export default function Footer() {
     return (
@@ -10,11 +11,7 @@ export default function Footer() {
             < div className ="grid grid-cols-1 md:grid-cols-12 gap-10">
                 < div className ="md:col-span-5">
                     < div className ="flex items-center gap-2 mb-6">
-                        < div className ="w-8 h-8 bg-white flex items-center justify-center">
-                            < span className ="font-display font-black text-[#0a0a0a] text-lg leading-none">
-    R
-                </span >
-              </div >
+                        <img src={logo} alt="Reliable Industries Logo" className="h-8 w-auto object-contain" />
         <div className="leading-none">
             < div className ="font-display font-black text-[20px] tracking-tight">
                   RELIABLE INDUSTRIES
